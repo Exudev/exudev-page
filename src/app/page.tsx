@@ -1,5 +1,6 @@
+'use client'
 import Head from "next/head";
-//import { useState } from "react";
+import { useState,  } from "react";
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {
   AiFillTwitterCircle,
@@ -10,9 +11,9 @@ import {
 } from "react-icons/ai";
 
 export default function Home() {
-  //const [darkMode, setDarkMode] = useState(false);
+   const [darkMode, setDarkMode] = useState(false);
   return (
-    <div>
+    <div className={darkMode ? "dark": ""}>
       <Head>
         <title>Pablo Diaz Portofolio</title>
         <meta name="" content="" />
@@ -25,7 +26,7 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
-                  //onClick={() => setDarkMode(!darkMode)}
+                  onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
               </li>
@@ -43,7 +44,7 @@ export default function Home() {
           <div className="text-center p-10" >
             <h2 className = "text-5xl py-2 text-teal-600 font-medium">Pablo Edu Diaz</h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <p className="text-md py-5 leading-8 text-white">
               {" "}
               Im Pablo Diaz, known online as Exudev. I have experience in
               software development as a full stack programmer, standing out in
@@ -55,8 +56,8 @@ export default function Home() {
               challenge enthusiast, and my ability to learn in an agile way is
               one of my strengths.
               </p>
-</div>
-              <p>
+
+              <p className="text-md py-5 leading-8 text-white">
               I am always willing to take on new challenges
               and learn new technologies in this constant and dynamic field. In
               addition to my career in software development, I have a variety of
@@ -65,13 +66,20 @@ export default function Home() {
               residence is in Santo Domingo, where I continue my quest for
               knowledge and excellence in the world of programming.
             </p>
-          
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gra-600">
-            <AiFillLinkedin />
-            <AiFillTwitterCircle/>
-            <AiFillGithub/>
           </div>
-          <div className=""></div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gra-600">
+            <a href="https://www.linkedin.com/in/pablo-eduardo-diaz-hernandez-a1b457183/">  <AiFillLinkedin /></a>
+            <a href="https://twitter.com/pabloedudh"> <AiFillTwitterCircle/></a>
+            <a href="https://github.com/Exudev">  <AiFillGithub/> </a>
+          </div>
+          <div className="">
+
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3>few of my projects</h3>
+          </div>
         </section>
       </main>
     </div>
