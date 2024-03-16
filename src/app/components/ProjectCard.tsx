@@ -3,16 +3,18 @@ import Image from "next/image";
 
 interface CardProps {
   imageSrc: string;
+  url: string;
   title: string;
   description: string;
 }
 
-export const Card: React.FC<CardProps> = ({ title, description }) => {
+export const Card: React.FC<CardProps> = ({ title,url, description }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <a href={url}>
+    <div  className="max-w-sm rounded overflow-hidden shadow-lg">
       <Image
         src="/CartasLocas.png"
-        alt="Profile Picture"
+        alt="Cartas Locas Project"
         width={350}
         height={350}
         className=""
@@ -22,6 +24,7 @@ export const Card: React.FC<CardProps> = ({ title, description }) => {
         <p className="text-gray-700 text-base">{description}</p>
       </div>
     </div>
+    </a>
   );
 };
 
