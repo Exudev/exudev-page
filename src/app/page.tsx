@@ -42,14 +42,14 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-3">
             <div className="flex justify-center items-center">
               <div className="rounded-full overflow-hidden">
                 <Image
                   src="/pp.jpeg"
                   alt="Profile Picture"
-                  width={275}
-                  height={275}
+                  width={225}
+                  height={225}
                   className=""
                 />
               </div>
@@ -60,7 +60,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-black   dark:text-white">
+            <p className="text-md py-2 leading-8 text-black   dark:text-white">
               {" "}
               Im Pablo Diaz, known online as Exudev. I have experience in
               software development as a full stack programmer, standing out in
@@ -72,7 +72,7 @@ export default function Home() {
               one of my strengths.
             </p>
 
-            <p className="text-md py-5 leading-8 text-black   dark:text-white">
+            <p className="text-md py-2 leading-8 text-black   dark:text-white">
               I am always willing to take on new challenges and learn new
               technologies in this constant and dynamic field. In addition to my
               career in software development, I have a variety of personal
@@ -82,7 +82,7 @@ export default function Home() {
               excellence in the world of programming.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gra-600">
+          <div className="text-5xl flex justify-center gap-16 py-2 text-gra-600">
             <a href="https://www.linkedin.com/in/pablo-eduardo-diaz-hernandez-a1b457183/">
               {" "}
               <AiFillLinkedin className="icon text-black-500 hover:text-purple-950" />
@@ -99,7 +99,7 @@ export default function Home() {
           <div className=""></div>
         </section>
         <section id="projects">
-          <div className="text-center p-10"  >
+          <div className="text-center p-3"  >
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Few of my projects
             </h3>
