@@ -106,7 +106,7 @@ export default function Home() {
             <div className="flex space-x-8 flex-wrap justify-center">
                <Card
               description="Board game, use JavaScript "
-              url="https://cartaslocasrd.000webhostapp.com"
+              url="https://cartas-locas.vercel.app/"
               imageSrc="/CartasLocas.png"
               title="Cartas Locas"
             />
