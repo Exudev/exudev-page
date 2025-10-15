@@ -27,7 +27,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className=" cursor-pointer text-2xl text-gray-600 dark:text-yellow-400"
                 />
               </li>
 
@@ -54,7 +54,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <h2 className="text-5xl py-2 text-purple-900 font-medium">
+            <h2 className="text-5xl py-2 text-purple-900 dark:text-purple-300 font-medium">
               Pablo Edu Diaz
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -82,18 +82,18 @@ export default function Home() {
               excellence in the world of programming.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-2 text-gra-600">
+          <div className="text-5xl flex justify-center gap-16 py-2 text-gray-600 dark:text-gray-300">
             <a href="https://www.linkedin.com/in/pablo-eduardo-diaz-hernandez-a1b457183/">
               {" "}
-              <AiFillLinkedin className="icon text-black-500 hover:text-purple-950" />
+              <AiFillLinkedin className="icon text-gray-600 dark:text-gray-300 hover:text-purple-950 dark:hover:text-purple-300" />
             </a>
             <a href="https://twitter.com/pabloedudh">
               {" "}
-              <AiFillTwitterCircle className="icon text-black-500 hover:text-purple-950" />
+              <AiFillTwitterCircle className="icon text-gray-600 dark:text-gray-300 hover:text-purple-950 dark:hover:text-purple-300" />
             </a>
             <a href="https://github.com/Exudev">
               {" "}
-              <AiFillGithub className="icon text-black-500 hover:text-purple-700" />{" "}
+              <AiFillGithub className="icon text-gray-600 dark:text-gray-300 hover:text-purple-700 dark:hover:text-purple-300" />{" "}
             </a>
           </div>
           <div className=""></div>
