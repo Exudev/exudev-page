@@ -92,7 +92,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               {t('Projects.heading')}
             </h3>
-            <div className="flex space-x-8 flex-wrap justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
               <Card
                 description={t('Projects.cartasLocas')}
                 url="https://cartas-locas.vercel.app/"

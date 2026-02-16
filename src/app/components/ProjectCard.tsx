@@ -18,7 +18,7 @@ export const Card: React.FC<CardProps> = ({ title,url,imageSrc ,description }) =
       alt=""
       width={350}
       height={350}
-      className=""
+      className="w-full h-auto"
     />
   </div>
   <div className="px-6 py-4">
