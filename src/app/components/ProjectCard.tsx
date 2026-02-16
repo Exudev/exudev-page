@@ -30,5 +30,3 @@ export const Card: React.FC<CardProps> = ({ title,url,imageSrc ,description }) =
     </a>
   );
 };
-
-export default Card;

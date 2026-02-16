@@ -1,0 +1,16 @@
+{
+  "Nav": {
+    "resume": "Currículum"
+  },
+  "Hero": {
+    "name": "Pablo Edu Diaz",
+    "title": "Desarrollador",
+    "bio1": "Soy Pablo Diaz, conocido en línea como Exudev. Tengo experiencia en desarrollo de software como programador full stack, destacándome particularmente en el área de Backend. Además, tengo habilidades en diseño de juegos. Mi enfoque actual está en el uso de lenguajes de programación como C# y Typescript. Actualmente, tengo un rol en Novosit, donde contribuyo al desarrollo del software Prodoctivity. Soy un entusiasta de los desafíos, y mi capacidad de aprender de manera ágil es una de mis fortalezas.",
+    "bio2": "Siempre estoy dispuesto a asumir nuevos desafíos y aprender nuevas tecnologías en este campo constante y dinámico. Además de mi carrera en desarrollo de software, tengo una variedad de intereses personales, incluyendo videojuegos, películas de terror, lectura de cómics y cultivar hábitos saludables a través del gimnasio. Actualmente, mi residencia es en Santo Domingo, donde continúo mi búsqueda de conocimiento y excelencia en el mundo de la programación."
+  },
+  "Projects": {
+    "heading": "Algunos de mis proyectos",
+    "cartasLocas": "Juego de mesa, usando JavaScript",
+    "parkingSpot": "ParkingSpot es una aplicación innovadora diseñada para mitigar la congestión del tráfico. Aquí utilicé Node Js, Mongo DB, React y otras herramientas."
+  }
+}
