@@ -108,8 +108,8 @@ export default function Home() {
               <Card
                 description="*******"
                 url="https://cartaslocasrd.000webhostapp.com"
-                imageSrc="/CartasLocas.png"
-                title="***"
+                imageSrc="/sinister-six.png"
+                title="Sinister Six"
               />
             </div>
           </div>
