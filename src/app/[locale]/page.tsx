@@ -106,8 +106,8 @@ export default function Home() {
                 title="Parking Spot"
               />
               <Card
-                description="*******"
-                url="https://cartaslocasrd.000webhostapp.com"
+                description={t('Projects.sinisterSix')}
+                url="https://sinister-six.vercel.app/"
                 imageSrc="/sinister-six.png"
                 title="Sinister Six"
               />

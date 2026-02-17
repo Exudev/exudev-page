@@ -11,6 +11,7 @@
   "Projects": {
     "heading": "Few of my projects",
     "cartasLocas": "Board game, use JavaScript",
-    "parkingSpot": "ParkingSpot is an innovative application designed to mitigate traffic congestion. Here i used, Node Js, Mongo DB, React and some other tools."
+    "parkingSpot": "ParkingSpot is an innovative application designed to mitigate traffic congestion. Here i used, Node Js, Mongo DB, React and some other tools.",
+    "sinisterSix": "It lets trainers build teams of 6 Pokemon, analyze type coverage, configure moves and held items. Done with Python, PokeAPI and React."
   }
 }
