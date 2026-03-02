@@ -107,7 +107,7 @@ export default function Home() {
               />
               <Card
                 description={t('Projects.sinisterSix')}
-                url="https://sinister-six.vercel.app/"
+                url="https://sinister-six.vercel.app?_vercel_share=0WzGkJeJuw2X2ptMwCSJN8bx10JEUnKG"
                 imageSrc="/sinister-six.png"
                 title="Sinister Six"
               />
