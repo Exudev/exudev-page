@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face{
-  font-family: "KIN668";
-  src: url("../../public/KIN668.TTF")
-}
