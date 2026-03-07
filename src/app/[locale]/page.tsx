@@ -13,6 +13,7 @@ import {Card} from "../components/ProjectCard";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
 export default function Home() {
+  const [showMore, setShowMore] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('darkMode') === 'true';
@@ -94,10 +95,10 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
               <Card
-                description={t('Projects.cartasLocas')}
-                url="https://cartas-locas.vercel.app/"
-                imageSrc="/CartasLocas.png"
-                title="Cartas Locas"
+                description={t('Projects.portalDigitalTv')}
+                url="https://portaldigitaltv.com/"
+                imageSrc="/PD.jpeg"
+                title="Portal Digital TV"
               />
               <Card
                 description={t('Projects.parkingSpot')}
@@ -112,6 +113,22 @@ export default function Home() {
                 title="Sinister Six"
               />
             </div>
+            <button
+              onClick={() => setShowMore(!showMore)}
+              className="mt-8 px-6 py-2 border border-gray-400 dark:border-gray-500 rounded-md text-gray-600 dark:text-gray-300 hover:text-purple-950 dark:hover:text-purple-300 hover:border-purple-950 dark:hover:border-purple-300 transition-colors"
+            >
+              {showMore ? t('Projects.seeLess') : t('Projects.seeMore')}
+            </button>
+            {showMore && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mt-8">
+                <Card
+                  description={t('Projects.cartasLocas')}
+                  url="https://cartas-locas.vercel.app/"
+                  imageSrc="/CartasLocas.png"
+                  title="Cartas Locas"
+                />
+              </div>
+            )}
           </div>
         </section>
       </main>
