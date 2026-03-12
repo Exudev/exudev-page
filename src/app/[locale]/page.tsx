@@ -127,6 +127,12 @@ export default function Home() {
                   imageSrc="/CartasLocas.png"
                   title="Cartas Locas"
                 />
+                <Card
+                  description={t('Projects.emitochondria')}
+                  url="https://www.npmjs.com/package/emitochondria"
+                  imageSrc="/Npm.png"
+                  title="Emitochondria"
+                />
               </div>
             )}
           </div>

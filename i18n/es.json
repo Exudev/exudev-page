@@ -12,6 +12,7 @@
     "heading": "Algunos de mis proyectos",
     "portalDigitalTv": "Portal de TV digital con transmisión en vivo y noticias disponible 24/7, con soporte bilingüe (ES/EN). Construido con Next.js, Supabase y next-intl.",
     "cartasLocas": "Juego de mesa, usando JavaScript",
+    "emitochondria": "Pequeño event emitter para TypeScript sin dependencias, con tipado completo, soporte async, listeners wildcard y manejo de errores integrado. Menos de 2KB.",
     "seeMore": "Ver más",
     "seeLess": "Ver menos",
     "parkingSpot": "ParkingSpot es una aplicación innovadora diseñada para mitigar la congestión del tráfico. Aquí utilicé Node Js, Mongo DB, Vue y otras herramientas.",
