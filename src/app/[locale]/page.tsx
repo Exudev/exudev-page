@@ -105,16 +105,16 @@ export default function Home() {
                   <div className="mt-3 text-sm text-gray-700 dark:text-gray-400 pl-4 border-l-2 border-gray-300 dark:border-white/10 py-1">
                     <p className="text-purple-600 dark:text-purple-400">{"{"}</p>
                     <p className="pl-4">
-                      <span className="text-blue-600 dark:text-neon-cyan">"name"</span>: <span className="text-green-600 dark:text-neon-green">"{t('Hero.name')}"</span>,
+                      <span className="text-blue-600 dark:text-neon-cyan">&quot;name&quot;</span>: <span className="text-green-600 dark:text-neon-green">&quot;{t('Hero.name')}&quot;</span>,
                     </p>
                     <p className="pl-4">
-                      <span className="text-blue-600 dark:text-neon-cyan">"role"</span>: <span className="text-green-600 dark:text-neon-green">"{t('Hero.title')}"</span>,
+                      <span className="text-blue-600 dark:text-neon-cyan">&quot;role&quot;</span>: <span className="text-green-600 dark:text-neon-green">&quot;{t('Hero.title')}&quot;</span>,
                     </p>
                     <p className="pl-4">
-                      <span className="text-blue-600 dark:text-neon-cyan">"status"</span>: <span className="text-green-600 dark:text-neon-green">"200 OK | Online"</span>,
+                      <span className="text-blue-600 dark:text-neon-cyan">&quot;status&quot;</span>: <span className="text-green-600 dark:text-neon-green">&quot;200 OK | Online&quot;</span>,
                     </p>
                     <p className="pl-4">
-                      <span className="text-blue-600 dark:text-neon-cyan">"bio"</span>: <span className="text-green-600 dark:text-neon-green">"{t('Hero.bio1')} {t('Hero.bio2')}"</span>
+                      <span className="text-blue-600 dark:text-neon-cyan">&quot;bio&quot;</span>: <span className="text-green-600 dark:text-neon-green">&quot;{t('Hero.bio1')} {t('Hero.bio2')}&quot;</span>
                     </p>
                     <p className="text-purple-600 dark:text-purple-400">{"}"}</p>
                   </div>
