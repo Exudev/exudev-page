@@ -16,9 +16,11 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={switchLocale}
-      className="cursor-pointer text-lg font-bold text-gray-600 dark:text-gray-300 hover:text-purple-950 dark:hover:text-purple-300 ml-8 border border-gray-400 dark:border-gray-500 rounded-md px-3 py-1"
+      className="cursor-pointer text-sm font-mono font-bold text-gray-600 dark:text-gray-300 hover:text-neon-cyan border border-gray-400 dark:border-white/10 dark:hover:border-neon-cyan rounded-md px-3 py-1.5 transition-all duration-300 dark:bg-tech-slate/50 flex items-center gap-2"
     >
-      {locale === 'en' ? 'ES' : 'EN'}
+      <span className="text-neon-green dark:text-neon-green opacity-70">{"<"}</span> 
+      {locale === 'en' ? 'ES' : 'EN'} 
+      <span className="text-neon-green dark:text-neon-green opacity-70">{">"}</span>
     </button>
   );
 }
