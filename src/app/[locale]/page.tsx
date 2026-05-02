@@ -73,16 +73,31 @@ export default function Home() {
               <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] h-[300px] bg-neon-green/5 blur-[100px] rounded-full -z-10 dark:block hidden pointer-events-none"></div>
               
               <div className="flex justify-center items-center mb-10 relative">
-                <div className="relative group">
+                <div className="relative group w-[200px] h-[200px] [perspective:1000px]">
                   <div className="absolute -inset-1 bg-gradient-to-r from-neon-cyan to-neon-green rounded-full blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                  <div className="rounded-full overflow-hidden relative ring-2 ring-gray-200 dark:ring-neon-cyan/50 p-1 bg-white dark:bg-tech-slate">
-                    <Image
-                      src="/pp.jpeg"
-                      alt="Profile Picture"
-                      width={200}
-                      height={200}
-                      className="rounded-full dark:grayscale hover:grayscale-0 transition-all duration-500 object-cover"
-                    />
+                  
+                  <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    {/* Front Face: pablo.jpg */}
+                    <div className="absolute inset-0 [backface-visibility:hidden] rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-neon-cyan/50 p-1 bg-white dark:bg-tech-slate">
+                      <Image
+                        src="/pablo.jpg"
+                        alt="Profile Picture Front"
+                        width={200}
+                        height={200}
+                        className="rounded-full dark:grayscale hover:grayscale-0 transition-all duration-500 object-cover w-full h-full"
+                      />
+                    </div>
+
+                    {/* Back Face: pp.jpeg */}
+                    <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-neon-cyan/50 p-1 bg-white dark:bg-tech-slate">
+                      <Image
+                        src="/pp.jpeg"
+                        alt="Profile Picture Back"
+                        width={200}
+                        height={200}
+                        className="rounded-full dark:grayscale hover:grayscale-0 transition-all duration-500 object-cover w-full h-full"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
