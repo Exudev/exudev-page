@@ -6,9 +6,10 @@ interface CardProps {
   url: string;
   title: string;
   description: string;
+  technologies: string[];
 }
 
-export const Card: React.FC<CardProps> = ({ title,url,imageSrc ,description }) => {
+export const Card: React.FC<CardProps> = ({ title, url, imageSrc, description, technologies }) => {
   return (
     <a href={url} className="block group w-full max-w-sm">
       <div className="glass-panel rounded-lg overflow-hidden transition-all duration-500 hover:neon-glow-cyan hover:-translate-y-2 relative border-l-4 border-l-transparent hover:border-l-neon-cyan h-full flex flex-col bg-white dark:bg-tech-slate/50 shadow-lg border border-gray-200 dark:border-white/10">
@@ -30,10 +31,19 @@ export const Card: React.FC<CardProps> = ({ title,url,imageSrc ,description }) =
           ) : null}
         </div>
         <div className="p-6 flex-grow flex flex-col">
-          <div className="font-mono text-xl mb-4 dark:text-neon-cyan text-gray-800 font-semibold flex items-center flex-wrap gap-2">
+          <div className="font-mono text-xl mb-2 dark:text-neon-cyan text-gray-800 font-semibold flex items-center flex-wrap gap-2">
             <span className="text-xs font-mono font-normal text-rust-orange px-2 py-1 rounded border border-rust-orange/30 bg-rust-orange/10">GET</span>
             <span className="truncate">{title}</span>
           </div>
+          
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {technologies.map((tech, index) => (
+              <span key={index} className="text-[10px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-white/5 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-white/10">
+                {tech}
+              </span>
+            ))}
+          </div>
+
           <p className="text-gray-600 text-sm dark:text-gray-300 border-l-2 border-gray-300 dark:border-white/10 pl-4 py-1 italic hover:border-neon-green transition-colors flex-grow">
             {description}
           </p>

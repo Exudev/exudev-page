@@ -10,12 +10,12 @@
   },
   "Projects": {
     "heading": "Few of my projects",
-    "portalDigitalTv": "24/7 live TV streaming and news portal with bilingual (ES/EN) support. Built with Next.js, Supabase, and next-intl.",
-    "cartasLocas": "Board game, use JavaScript",
+    "portalDigitalTv": "24/7 live TV streaming and news portal with bilingual (ES/EN) support.",
+    "cartasLocas": "Board game.",
     "emitochondria": "Tiny zero-dependency event emitter for TypeScript with full type safety, async support, wildcard listeners, and built-in error handling. Under 2KB.",
     "seeMore": "See more",
     "seeLess": "See less",
-    "parkingSpot": "ParkingSpot is an innovative application designed to mitigate traffic congestion. Here i used, Node Js, Mongo DB, Vue and some other tools.",
-    "sinisterSix": "It lets trainers build teams of 6 Pokemon, analyze type coverage, configure moves and held items. Done with Python, PokeAPI and React."
+    "parkingSpot": "ParkingSpot is an innovative application designed to mitigate traffic congestion.",
+    "sinisterSix": "It lets trainers build teams of 6 Pokemon, analyze type coverage, configure moves and held items."
   }
 }

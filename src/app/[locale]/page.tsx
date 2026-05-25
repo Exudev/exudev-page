@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import {useTranslations} from 'next-intl';
-import {BsFillMoonStarsFill} from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -11,32 +10,14 @@ import {
 } from "react-icons/ai";
 import {Card} from "../components/ProjectCard";
 import LanguageSwitcher from "../components/LanguageSwitcher";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
-  const [mounted, setMounted] = useState(false);
   const t = useTranslations();
 
-  useEffect(() => {
-    setMounted(true);
-    const stored = localStorage.getItem('darkMode');
-    const isDark = stored !== 'false'; // Defaults to true
-    setDarkMode(isDark);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
-    localStorage.setItem('darkMode', String(darkMode));
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode, mounted]);
-
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div suppressHydrationWarning>
       <main className="bg-gray-50 dark:bg-tech-black px-6 md:px-20 lg:px-40 transition-colors duration-500 min-h-screen relative overflow-hidden font-sans">
         {/* Subtle grid background for tech feel */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] dark:opacity-100 opacity-0 pointer-events-none"></div>
@@ -48,9 +29,7 @@ export default function Home() {
             </div>
             <ul className="flex items-center gap-3 sm:gap-6">
               <li>
-                <div onClick={() => setDarkMode(!darkMode)} className="cursor-pointer p-2 rounded-md glass-panel hover:border-neon-cyan transition-all text-xl text-gray-600 dark:text-yellow-400">
-                  <BsFillMoonStarsFill />
-                </div>
+                <ThemeToggle />
               </li>
               <li>
                 <LanguageSwitcher />
@@ -115,7 +94,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-gray-800 dark:text-gray-300">
-                    <span className="text-neon-cyan font-bold">{">"}</span> <span className="text-rust-orange">curl</span> <span className="text-green-600 dark:text-neon-green">https://api.exudev.com/profile</span>
+                    <span className="text-neon-cyan font-bold">&gt;</span> <span className="text-rust-orange">curl</span> <span className="text-green-600 dark:text-neon-green">https://api.exudev.com/profile</span>
                   </p>
                   <div className="mt-3 text-sm text-gray-700 dark:text-gray-400 pl-4 border-l-2 border-gray-300 dark:border-white/10 py-1">
                     <p className="text-purple-600 dark:text-purple-400">{"{"}</p>
@@ -177,18 +156,21 @@ export default function Home() {
                 url="https://portaldigitaltv.com/"
                 imageSrc="/PD.jpeg"
                 title="Portal Digital TV"
+                technologies={["Next.js", "Supabase", "next-intl"]}
               />
               <Card
                 description={t('Projects.parkingSpot')}
                 url="https://docs.google.com/presentation/d/1HGjAPsa_dOM-v44U5EoJvkkBFajFDEaoez8PadRBkX0/edit?usp=sharing"
                 imageSrc="/PS.png"
                 title="Parking Spot"
+                technologies={["Node.js", "MongoDB", "Vue"]}
               />
               <Card
                 description={t('Projects.sinisterSix')}
                 url="https://sinister-six.com/"
                 imageSrc="/sinister-six.png"
                 title="Sinister Six"
+                technologies={["Python", "PokeAPI", "React"]}
               />
             </div>
             <div className="flex justify-center mt-12 mb-8">
@@ -207,12 +189,14 @@ export default function Home() {
                   url="https://cartas-locas.vercel.app/"
                   imageSrc="/CartasLocas.png"
                   title="Cartas Locas"
+                  technologies={["JavaScript"]}
                 />
                 <Card
                   description={t('Projects.emitochondria')}
                   url="https://www.npmjs.com/package/emitochondria"
                   imageSrc="/Npm.png"
                   title="Emitochondria"
+                  technologies={["TypeScript"]}
                 />
               </div>
             )}
