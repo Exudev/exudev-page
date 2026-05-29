@@ -156,7 +156,7 @@ export default function Home() {
                 url="https://portaldigitaltv.com/"
                 imageSrc="/PD.jpeg"
                 title="Portal Digital TV"
-                technologies={["Next.js", "Supabase", "next-intl"]}
+                technologies={["React", "Tailwind CSS", "Next.js", "Supabase", "next-intl"]}
               />
               <Card
                 description={t('Projects.parkingSpot')}
