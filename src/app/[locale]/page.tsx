@@ -170,7 +170,7 @@ export default function Home() {
                 url="https://sinister-six.com/"
                 imageSrc="/sinister-six.png"
                 title="Sinister Six"
-                technologies={["Python", "PokeAPI", "React"]}
+                technologies={["Python", "PokeAPI", "React", "Cypress"]}
               />
             </div>
             <div className="flex justify-center mt-12 mb-8">
